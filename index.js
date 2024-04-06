@@ -2,10 +2,11 @@ const Imap = require('imap');
 const fs = require('fs');
 const path = require("path");
 const {simpleParser} = require('mailparser');
+require('dotenv').config();
 
 const imapConfig = {
-  user: 'gajelli.kiransai@gmail.com',
-  password: 'mstjtnnlmjvseilz',
+  user: process.env.USER,
+  password: process.env.PASSWORD,
   host: 'imap.gmail.com',
   port: 993,
   tls: true,
