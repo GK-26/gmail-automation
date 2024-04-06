@@ -1,0 +1,112 @@
+{
+  "attachments": [],
+  "headers": {},
+  "headerLines": [
+    {
+      "key": "delivered-to",
+      "line": "Delivered-To: gajelli.kiransai@gmail.com"
+    },
+    {
+      "key": "received",
+      "line": "Received: by 2002:a0c:db11:0:b0:690:170e:a8f with SMTP id d17csp2566013qvk;\r\n        Mon, 4 Mar 2024 05:01:55 -0800 (PST)"
+    },
+    {
+      "key": "x-google-smtp-source",
+      "line": "X-Google-Smtp-Source: AGHT+IGq8uq8Q8Zua1W1U7wwHnWKT2sRNn8aI1NMhwBzywpKv9tOV/135iaqQqUqyfjJrWIqGVnZ"
+    },
+    {
+      "key": "x-received",
+      "line": "X-Received: by 2002:a17:90b:3646:b0:29b:46f0:6f8e with SMTP id nh6-20020a17090b364600b0029b46f06f8emr4601402pjb.8.1709557314729;\r\n        Mon, 04 Mar 2024 05:01:54 -0800 (PST)"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=2; a=rsa-sha256; t=1709557314; cv=pass;\r\n        d=google.com; s=arc-20160816;\r\n        b=cE5c8LatkhWZdd+x4XZmaClR9Qce+vMrKyyliYGlQjCBXx7gH3ojREUbfJIlGYzFcA\r\n         BbQijyYrSFN6PFKLoasjDaDdd/S7lloIh00z88grRBkk245CrtRjsOErZYLnnpRfS+Sd\r\n         CN8Q2L8hcnnnCCnADJKFa/zxwkuynKK+HomscmqIoHbxDpI3uK+TYSwKTjqe0tImEYAF\r\n         6tDClyKudZjkikS/QbZRzMo7Q700PahNA2p7Om5IPVQSnkx5+ObFTTj9Wu3PuQ7KDL/L\r\n         H00tv0lEEr8OjQK57E86aqCln1JzUMb39as2dwtbMKhteeI3T5XVqV7pfiGT4vCWMmrB\r\n         pH2Q=="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;\r\n        h=user-agent:importance:mime-version:subject:message-id:to:from:date\r\n         :dkim-signature;\r\n        bh=pMaMes5EwrQyZF/SlJRpyEgTkvx/ChOLTLsSWFnkVL4=;\r\n        fh=IIH89d8HIohZNotrBNbpIXQjHJSZaUcuExMljRF7Vtg=;\r\n        b=rGAqWX5aSWAWLph347Y9EhITOhRJa70Asd33fdXDxUof31B5OOoZ+fe7b5tHCHEfqK\r\n         ly0fumvMpbbV+bI8bi1Nglq0HPrRCwjp3LgYC9jJvNd1l3z5eNFkfxkeY9jYen7ThtSA\r\n         RL72EGj35RUgb9EJFECebw/2TdH+DQHMeaL61VzkVvNzvfQw4yDSebtZSPqRvd3QrCRg\r\n         zLk7TjUcvoT/HDIfotyhncSbqsJ31Qlh8oo1HRpVxwQC36bgWqSnZcsmkblQI7SLR4ut\r\n         K4jRrFvx1neso9pxw6CW6gvtNvFI7cVYe6Bi+M/yWhNVn/SBePAfF/iqpfJC6E/spEt3\r\n         IwDA==;\r\n        dara=google.com"
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=2; mx.google.com;\r\n       dkim=pass header.i=@synycssolutions.com header.s=dkim-sel header.b=pYRAcJvD;\r\n       arc=pass (i=1 spf=pass spfdomain=synycssolutions.com dkim=pass dkdomain=synycssolutions.com dmarc=pass fromdomain=synycssolutions.com>);\r\n       spf=pass (google.com: domain of kiransai@synycssolutions.com designates 136.143.188.52 as permitted sender) smtp.mailfrom=kiransai@synycssolutions.com;\r\n       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=synycssolutions.com"
+    },
+    {
+      "key": "return-path",
+      "line": "Return-Path: <kiransai@synycssolutions.com>"
+    },
+    {
+      "key": "received",
+      "line": "Received: from sender4-of-o52.zoho.com (sender4-of-o52.zoho.com. [136.143.188.52])\r\n        by mx.google.com with ESMTPS id b9-20020a17090a9bc900b00299363fde59si10250265pjw.18.2024.03.04.05.01.54\r\n        for <gajelli.kiransai@gmail.com>\r\n        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);\r\n        Mon, 04 Mar 2024 05:01:54 -0800 (PST)"
+    },
+    {
+      "key": "received-spf",
+      "line": "Received-SPF: pass (google.com: domain of kiransai@synycssolutions.com designates 136.143.188.52 as permitted sender) client-ip=136.143.188.52;"
+    },
+    {
+      "key": "authentication-results",
+      "line": "Authentication-Results: mx.google.com;\r\n       dkim=pass header.i=@synycssolutions.com header.s=dkim-sel header.b=pYRAcJvD;\r\n       arc=pass (i=1 spf=pass spfdomain=synycssolutions.com dkim=pass dkdomain=synycssolutions.com dmarc=pass fromdomain=synycssolutions.com>);\r\n       spf=pass (google.com: domain of kiransai@synycssolutions.com designates 136.143.188.52 as permitted sender) smtp.mailfrom=kiransai@synycssolutions.com;\r\n       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=synycssolutions.com"
+    },
+    {
+      "key": "arc-seal",
+      "line": "ARC-Seal: i=1; a=rsa-sha256; t=1709557313; cv=none; \r\n\td=zohomail.com; s=zohoarc; \r\n\tb=VM1Wb+Ox7nR/9N4EG/jnDqIRPa0THorobCmU0MB9Hwp5h04dp2lvf5TD0iEt/+gVrsTBVkCa6CcE9+3vvp9kYeR+Wrn9MquD6cfnPOXTWqZjdnuL8WwYtwNG6KHo7Sv7E7luKY7tEyyCAdnHaDXdBHwnfUE1u95r4OD1Y/z/cO0="
+    },
+    {
+      "key": "arc-message-signature",
+      "line": "ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail.com; s=zohoarc; \r\n\tt=1709557313; h=Content-Type:Date:Date:From:From:MIME-Version:Message-ID:Subject:Subject:To:To:Message-Id:Reply-To:Cc; \r\n\tbh=pMaMes5EwrQyZF/SlJRpyEgTkvx/ChOLTLsSWFnkVL4=; \r\n\tb=Lwf7mltEIhiSGCRub4twi6ABcrZEShQqxqbgiRACxGwzb/yIR4GRE7zy2hvRO0nDbaOWyCu3XdGp8K95JVP9rzPlcfYG31/TzUjYy5wBhBFQsn/03JtvAnAQsGj6vRXZ8l3bqOUrniqcB1QsexwwraG7xw3HtbFXGEtdYUmUaYo="
+    },
+    {
+      "key": "arc-authentication-results",
+      "line": "ARC-Authentication-Results: i=1; mx.zohomail.com;\r\n\tdkim=pass  header.i=synycssolutions.com;\r\n\tspf=pass  smtp.mailfrom=kiransai@synycssolutions.com;\r\n\tdmarc=pass header.from=<kiransai@synycssolutions.com>"
+    },
+    {
+      "key": "dkim-signature",
+      "line": "DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; t=1709557313;\r\n\ts=dkim-sel; d=synycssolutions.com; i=kiransai@synycssolutions.com;\r\n\th=Date:Date:From:From:To:To:Message-Id:Message-Id:Subject:Subject:MIME-Version:Content-Type:Reply-To:Cc;\r\n\tbh=pMaMes5EwrQyZF/SlJRpyEgTkvx/ChOLTLsSWFnkVL4=;\r\n\tb=pYRAcJvDjkkHYK5k2i6ltK1Qa+RRtyiQ/sZUiItLX+N2MKe1isuDxdBip1n0uj8y\r\n\tJZNdaUtKOub9/Mzbk9fzI3PP6j3gIVOE0gnft8mfPre4P9NMLdPqM91HRFwi6j7Uhud\r\n\tRu1Md+hKSef8HiEuQupd5GaWwJsslpbSECFg0CmY="
+    },
+    {
+      "key": "received",
+      "line": "Received: from mail.zoho.com by mx.zohomail.com\r\n\twith SMTP id 1709557310886401.6341566381352; Mon, 4 Mar 2024 05:01:50 -0800 (PST)"
+    },
+    { "key": "date", "line": "Date: Mon, 04 Mar 2024 18:31:50 +0530" },
+    {
+      "key": "from",
+      "line": "From: Kiran sai Gajelli <kiransai@synycssolutions.com>"
+    },
+    {
+      "key": "to",
+      "line": "To: \"gajellikiransai\" <gajelli.kiransai@gmail.com>"
+    },
+    {
+      "key": "message-id",
+      "line": "Message-Id: <18e098e6590.12420478b442676.7292771037473190687@synycssolutions.com>"
+    },
+    { "key": "subject", "line": "Subject: sdfsdf" },
+    { "key": "mime-version", "line": "MIME-Version: 1.0" },
+    {
+      "key": "content-type",
+      "line": "Content-Type: multipart/alternative; \r\n\tboundary=\"----=_Part_1399946_1429992284.1709557310864\""
+    },
+    { "key": "importance", "line": "Importance: Medium" },
+    { "key": "user-agent", "line": "User-Agent: Zoho Mail" },
+    { "key": "x-mailer", "line": "X-Mailer: Zoho Mail" }
+  ],
+  "html": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"><html><head><meta content=\"text/html;charset=UTF-8\" http-equiv=\"Content-Type\"></head><body ><div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;\"><div>sdfsdfsdf</div><div><br></div><div class=\"zmail_signature_below\"><div id=\"\" data-zbluepencil-ignore=\"true\" data-sigid=\"319274000000011003\"><div>Kiran sai Gajelli<br></div></div></div><div><br></div></div><br></body></html>",
+  "text": "sdfsdfsdf\n\n\nKiran sai Gajelli",
+  "textAsHtml": "<p>sdfsdfsdf</p><p>Kiran sai Gajelli</p>",
+  "subject": "sdfsdf",
+  "date": "2024-03-04T13:01:50.000Z",
+  "to": {
+    "value": [
+      { "address": "gajelli.kiransai@gmail.com", "name": "gajellikiransai" }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">gajellikiransai</span> &lt;<a href=\"mailto:gajelli.kiransai@gmail.com\" class=\"mp_address_email\">gajelli.kiransai@gmail.com</a>&gt;</span>",
+    "text": "\"gajellikiransai\" <gajelli.kiransai@gmail.com>"
+  },
+  "from": {
+    "value": [
+      { "address": "kiransai@synycssolutions.com", "name": "Kiran sai Gajelli" }
+    ],
+    "html": "<span class=\"mp_address_group\"><span class=\"mp_address_name\">Kiran sai Gajelli</span> &lt;<a href=\"mailto:kiransai@synycssolutions.com\" class=\"mp_address_email\">kiransai@synycssolutions.com</a>&gt;</span>",
+    "text": "\"Kiran sai Gajelli\" <kiransai@synycssolutions.com>"
+  },
+  "messageId": "<18e098e6590.12420478b442676.7292771037473190687@synycssolutions.com>"
+}
